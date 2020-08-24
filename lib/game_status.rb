@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 def won(board)
   WIN_COMBINATIONS.each do |pos1, pos2, pos3|
     moves = [board[pos1],board[pos2],board[pos3]]
-    ((moves == ["X","X","X"]) || (moves == ["O","O","O"])) ? (return [pos1, pos2, pos3]) : (return false)
+    ((moves == ["X","X","X"]) || (moves == ["O","O","O"])) ? (return [pos1, pos2, pos3]) : false
   end
 end
 
