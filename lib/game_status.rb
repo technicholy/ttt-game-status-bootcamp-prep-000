@@ -17,7 +17,7 @@ def won(board)
   WIN_COMBINATIONS.each do |win_combination|
     moves = []
     win_combination.each do |pos|
-      moves.concat(board[pos])
+      moves.push(board[pos])
     end
     puts moves
     #((moves == ["X","X","X"]) || (moves == ["O","O","O"])) ? (return win_combination) : (return false)
