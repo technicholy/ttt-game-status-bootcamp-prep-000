@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   exes = board.keep_if { |spot| spot == "X"}
   ohs = board.keep_if { |spot| spot == "O"}
-  (board.one?(exes) || board.one?(ohs)) ? true:false
+  puts board
 end
 
 def full(board)
