@@ -6,9 +6,9 @@ def report_indexes(board, player)
   moves = []
   board.each_with_index do |spot, index|
     if spot == player
-        
+
     end
-  end  
+  end
 end
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won(board)
-  
+
 end
 
 def full(board)
