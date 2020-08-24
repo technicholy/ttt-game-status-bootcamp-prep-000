@@ -13,7 +13,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
-def won?(board)
+def won(board)
   exes = board.keep_if { |spot| spot == "X"}
   ohs = board.keep_if { |spot| spot == "O"}
   puts board
