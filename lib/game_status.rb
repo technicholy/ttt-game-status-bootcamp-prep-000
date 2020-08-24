@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 def won(board)
   exes = board.keep_if { |spot| spot == "X"}
   ohs = board.keep_if { |spot| spot == "O"}
-  puts board
+  puts exes
 end
 
 def full(board)
