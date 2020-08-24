@@ -2,14 +2,11 @@
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
-def report_indexes(board, player)
+def report(combo, board, player)
   moves = []
-  board.each_with_index do |spot, index|
-    if spot == player
-      moves << index
-    end
+  combo.each do |val|
+    (board[val] == player) ? (moves << val): nil
   end
-  return moves
 end
 WIN_COMBINATIONS = [
   [0,1,2],
