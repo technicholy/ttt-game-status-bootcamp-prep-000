@@ -20,6 +20,6 @@ def won?(board)
   end
   return false
 end
-
-def full(board)
+def full?(board)
+  ((board.count("X") + board.count("O")) == 9) ? true:false
 end
