@@ -2,7 +2,14 @@
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
-
+def report_indexes(board, player)
+  moves = []
+  board.each_with_index do |spot, index|
+    if spot == player
+        
+    end
+  end  
+end
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -14,9 +21,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won(board)
-  exes = board.keep_if { |spot| spot == "X"}
-  ohs = board.keep_if { |spot| spot == "O"}
-  puts exes
+  
 end
 
 def full(board)
