@@ -19,7 +19,8 @@ def won(board)
     win_combination.each do |pos|
       moves << board[pos]
     end
-    ((moves == ["X","X","X"]) || (moves == ["O","O","O"])) ? (return win_combination) : (return false)
+    return moves
+    #((moves == ["X","X","X"]) || (moves == ["O","O","O"])) ? (return win_combination) : (return false)
   end
 end
 
