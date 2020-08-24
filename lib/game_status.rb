@@ -23,6 +23,6 @@ end
 def full?(board)
   ((board.count("X") + board.count("O")) == 9) ? true:false
 end
-def draw(board)
+def draw?(board)
   (full?(board) && !(won?(board)))? true:false
 end
